@@ -1,12 +1,16 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
+import Hero from "./components/hero";
+import Nav from "./components/navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] container ">
-      <div className="container mx-auto px-12 py-14">
+    <main className="">
+      <Nav />
+      <section id="home">
         <Hero />
-      </div>
+      </section>
+      <section id="about"></section>
+      <section id="projects"></section>
     </main>
   );
 }
