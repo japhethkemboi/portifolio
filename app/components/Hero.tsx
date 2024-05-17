@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../../public/images/japhe3.png";
 import cbbg from "../../public/images/cbimg.jpg";
-import Typewriter from "typewriter-effect";
+import { Typewriter } from "nextjs-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -19,9 +19,18 @@ const Hero = () => {
             Hello, I&apos;m
           </span>
           <br />
-          Japheth Kemboi
+          <Typewriter
+            words={["Japheth Kemboi", "Full Stack Developer"]}
+            cursor
+            loop={true}
+            cursorStyle="_"
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
         </h1>
-        <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6"></p>
+        <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
+          I develop web and mobile apps.
+        </p>
         <div>
           <button className="px-6 py-3 bg-white sm:w-fit hover:bg-slate-200 text-black bg-">
             Hire Me

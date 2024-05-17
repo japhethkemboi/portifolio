@@ -9,15 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "^14.2.3",
+    "nextjs-simple-typewriter": "^5.2.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-responsive-carousel": "^3.2.23",
-    "typewriter-effect": "^2.21.0"
+    "react-icons": "^5.2.1",
+    "react-multi-carousel": "^2.8.5",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",

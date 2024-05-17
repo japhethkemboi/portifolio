@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "title": "Dandia",
+      "desc": "A versatile Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
+      "titleColor": "#c56363",
+      "textColor": "#000",
+      "bgColor": "#fff",
+      "images": [
+        "/images/dandia/1.jpg",
+        "/images/dandia/2.jpg",
+        "/images/dandia/3.jpg",
+        "/images/dandia/4.jpg",
+        "/images/dandia/5.jpg",
+        "/images/dandia/6.jpg"
+      ],
+      "stack": [
+        "Javascript",
+        "React Native",
+        "Node js",
+        "MongoDB",
+        "Tailwindcss"
+      ]
+    },
+    {
+      "title": "BurghExpress",
+      "desc": "Canadian food delivery app linking users to restaurants for seamless ordering and delivery.",
+      "titleColor": "#fc0000",
+      "textColor": "#000",
+      "bgColor": "#e3edf6",
+      "images": [
+        "/images/burghexpress/1.png",
+        "/images/burghexpress/2.png",
+        "/images/burghexpress/3.png",
+        "/images/burghexpress/4.png",
+        "/images/burghexpress/5.png",
+        "/images/burghexpress/6.png",
+        "/images/burghexpress/7.png",
+        "/images/burghexpress/8.png"
+      ],
+      "stack": [
+        "Javascript",
+        "React Native",
+        "Node js",
+        "MongoDB",
+        "Tailwindcss"
+      ]
+    },
+    {
+      "title": "Questionnaire app",
+      "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
+      "titleColor": "#fff",
+      "textColor": "#efffff",
+      "bgColor": "#28cab2",
+      "images": [
+        "/images/questionnaire/1.jpg",
+        "/images/questionnaire/2.jpg",
+        "/images/questionnaire/3.jpg",
+        "/images/questionnaire/4.jpg",
+        "/images/questionnaire/5.jpg"
+      ],
+      "stack": ["Javascript", "React Native", "Firebase", "Tailwindcss"]
+    },
+    {
+      "title": "eWriters",
+      "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
+      "titleColor": "#03a9f4",
+      "textColor": "#000",
+      "bgColor": "#e3edf6",
+      "images": [
+        "/images/ewriters/1.jpg",
+        "/images/ewriters/2.jpg",
+        "/images/ewriters/3.jpg"
+      ],
+      "stack": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss"]
+    }
+  ]
+}
