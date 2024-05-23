@@ -6,7 +6,7 @@ import { Typewriter } from "nextjs-simple-typewriter";
 const Hero = () => {
   return (
     <section
-      className="flex h-screen bg-cover md:bg-right-bottom md:bg-contain md:bg-no-repeat bg-black"
+      className="snap-start flex h-screen bg-cover md:bg-right-bottom md:bg-contain md:bg-no-repeat bg-black"
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       <div

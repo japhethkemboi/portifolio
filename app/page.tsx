@@ -8,13 +8,9 @@ export default function Home() {
   return (
     <main className="">
       <Nav />
-      <section id="home">
+      <section className="overflow-y-scroll snap-y h-screen snap-mandatory">
         <Hero />
-      </section>
-      <section id="about">
         <About />
-      </section>
-      <section id="projects">
         <Projects />
       </section>
     </main>

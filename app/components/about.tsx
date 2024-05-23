@@ -8,7 +8,7 @@ import {
 
 const About = () => {
   return (
-    <section className="flex flex-col h-screen space-y-5 text-white px-10 py-10 bg-black">
+    <section className="flex flex-col snap-start h-screen space-y-5 text-white px-10 py-10 bg-black">
       <div>
         <h2 className="bg-blue-800 mb-4 text-5xl sm:text-6xl md:text-7xl font-extrabold">
           My Tools

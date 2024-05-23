@@ -1,6 +1,6 @@
 {
-  "items": [
-    {
+  "items": {
+    "dandia": {
       "title": "Dandia",
       "desc": "A versatile Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
       "titleColor": "#c56363",
@@ -22,31 +22,7 @@
         "Tailwindcss"
       ]
     },
-    {
-      "title": "BurghExpress",
-      "desc": "Canadian food delivery app linking users to restaurants for seamless ordering and delivery.",
-      "titleColor": "#fc0000",
-      "textColor": "#000",
-      "bgColor": "#e3edf6",
-      "images": [
-        "/images/burghexpress/1.png",
-        "/images/burghexpress/2.png",
-        "/images/burghexpress/3.png",
-        "/images/burghexpress/4.png",
-        "/images/burghexpress/5.png",
-        "/images/burghexpress/6.png",
-        "/images/burghexpress/7.png",
-        "/images/burghexpress/8.png"
-      ],
-      "stack": [
-        "Javascript",
-        "React Native",
-        "Node js",
-        "MongoDB",
-        "Tailwindcss"
-      ]
-    },
-    {
+    "questionnaire": {
       "title": "Questionnaire app",
       "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
       "titleColor": "#fff",
@@ -61,7 +37,7 @@
       ],
       "stack": ["Javascript", "React Native", "Firebase", "Tailwindcss"]
     },
-    {
+    "ewriters": {
       "title": "eWriters",
       "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
       "titleColor": "#03a9f4",
@@ -74,5 +50,5 @@
       ],
       "stack": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss"]
     }
-  ]
+  }
 }
