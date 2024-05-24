@@ -6,9 +6,12 @@ import Projects from "./components/projects";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Nav />
-      <section className="overflow-y-scroll snap-y h-screen snap-mandatory">
+      <section
+        className="overflow-y-scroll scroll-smooth snap snap-y h-screen"
+        style={{ scrollSnapType: "y mandatory" }}
+      >
         <Hero />
         <About />
         <Projects />
