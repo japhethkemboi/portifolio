@@ -25,7 +25,6 @@ const Hero = () => {
           <Typewriter
             words={["Japheth Kemboi", "Full Stack Developer"]}
             cursor
-            loop={true}
             cursorStyle="_"
             deleteSpeed={50}
             delaySpeed={2000}
