@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import Nav from "./components/navbar";
 import About from "./components/about";
 import Projects from "./components/projects";
