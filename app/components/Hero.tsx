@@ -14,7 +14,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${cbbg.src})`, zIndex: -1 }}
       ></div>
       <div
-        className="flex flex-col justify-end px-10 pb-20"
+        className="flex flex-col justify-end px-10 pb-20 w-full bg-center"
         style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover" }}
       >
         <h1 className="text-white mb-4 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold">
