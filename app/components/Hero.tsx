@@ -14,8 +14,8 @@ const Hero = () => {
         style={{ backgroundImage: `url(${cbbg.src})`, zIndex: -1 }}
       ></div>
       <div
-        className="flex flex-col justify-end px-10 pb-20 w-full bg-center"
-        style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover" }}
+        className="flex flex-col justify-end px-10 pb-20 w-full bg-center md:bg-contain"
+        style={{ backgroundImage: `url(${bg.src})`}}
       >
         <h1 className="text-white mb-4 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold">
           <span className="text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-[#F5F5DC]">
@@ -33,11 +33,11 @@ const Hero = () => {
         <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
           I develop web and mobile apps.
         </p>
-        <div className="space-x-3">
-          <button className="px-6 py-3 bg-white hover:bg-slate-200 text-black">
+        <div className="flex gap-3">
+          <button className="p-3 md:px-6 bg-white hover:bg-slate-200 text-black">
             Hire Me
           </button>
-          <button className="px-6 py-3 bg-transparent hover:bg-slate-800 text-white border border-white">
+          <button className="md:px-6 p-3 bg-transparent hover:bg-slate-800 text-white border border-white">
             Download Resume
           </button>
         </div>
