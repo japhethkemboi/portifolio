@@ -14,10 +14,10 @@ const Hero = () => {
         style={{ backgroundImage: `url(${cbbg.src})` }}
       ></div>
       <div
-        className="flex flex-col justify-end px-10 pb-20 w-full bg-center bg-contain bg-no-repeat md:bg-right"
+        className="flex flex-col justify-end px-10 pb-20 w-full bg-center bg-contain bg-no-repeat md:bg-right items-center md:items-start"
         style={{ backgroundImage: `url(${bg.src})` }}
       >
-        <h1 className="text-white mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl font-extrabold">
+        <h1 className="text-white mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl font-extrabold text-center md:text-left">
           <span className="text-4xl lg:text-6xl text-[#FAD02C]">
             Hello, I&apos;m
           </span>
