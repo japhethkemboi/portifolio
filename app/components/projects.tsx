@@ -6,8 +6,8 @@ import Dandia from "./dandia";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col py-5">
-      <div className="px-10 snap-start">
+    <section id="projects" className="flex flex-col py-14 snap-start">
+      <div className="px-10">
         <h2 className="text-black mb-4 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold">
           My Work
         </h2>
