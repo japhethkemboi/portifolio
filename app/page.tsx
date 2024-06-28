@@ -1,20 +1,24 @@
 import Hero from "./components/hero";
-import Nav from "./components/navbar";
-import About from "./components/about";
+import Header from "./components/header";
 import Projects from "./components/projects";
+import Footer from "./components/footer";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
-      <Nav />
-      <section
-        className="overflow-y-scroll scroll-smooth snap snap-y h-screen"
-        style={{ scrollSnapType: "y mandatory" }}
-      >
+    <main
+      className="flex flex-col bg-cover bg-no-repeat h-screen overflow-y-scroll overflow-x-hidden"
+      style={{
+        backgroundImage: `url("/images/ikhlas-rahman-EWimyN-lBmQ-unsplash.jpg")`,
+      }}
+    >
+      <Header />
+      <div className="flex flex-col bg-white/80 backdrop-blur w-full">
         <Hero />
-        <About />
         <Projects />
-      </section>
+        <Contact />
+        <Footer />
+      </div>
     </main>
   );
 }

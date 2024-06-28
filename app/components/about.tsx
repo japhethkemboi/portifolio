@@ -16,7 +16,6 @@ const About = () => {
     <section
       id="about"
       className="flex flex-col h-screen space-y-5 text-white px-5 py-14 bg-black relative overflow-hidden snap-start"
-      style={{ backgroundImage: `url(${cbbg.src})` }}
     >
       <div>
         <h2 className="bg-blue-800 mb-4 text-5xl sm:text-6xl md:text-7xl font-extrabold">
