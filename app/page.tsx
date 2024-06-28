@@ -13,7 +13,7 @@ export default function Home() {
       }}
     >
       <Header />
-      <div className="flex flex-col bg-white/80 backdrop-blur w-full">
+      <div className="flex flex-col bg-white/80 backdrop-blur w-full gap-12">
         <Hero />
         <Projects />
         <Contact />
