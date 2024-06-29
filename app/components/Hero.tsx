@@ -18,6 +18,7 @@ import {
   SiPython,
   SiReact,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 
 const Hero = () => {
@@ -104,6 +105,9 @@ const Hero = () => {
                   <SiPython /> Python
                 </li>
                 <li className="flex items-center gap-4">
+                  <SiTypescript /> Typescript
+                </li>
+                <li className="flex items-center gap-4">
                   <SiCsharp /> C#
                 </li>
                 <li className="flex items-center gap-4">
@@ -163,6 +167,9 @@ const Hero = () => {
           <li className="flex items-center gap-2">Mopp.pl</li>
           <li className="flex items-center gap-2">
             <SiJavascript /> Javascript
+          </li>
+          <li className="flex items-center gap-2">
+            <SiTypescript /> Typescript
           </li>
           <li className="flex items-center gap-2">
             <SiPython /> Python

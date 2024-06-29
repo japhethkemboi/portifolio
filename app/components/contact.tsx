@@ -9,9 +9,9 @@ function Contact() {
       <div className="flex flex-col lg:flex-row gap-6 p-8 items-center justify-evenly">
         <div className="flex flex-col text-center gap-4 max-w-lg">
           <h3 className="xs:text-sm md:text-lg lg:text-4xl font-semibold mb-4">
-            If you're looking for a dedicated developer to bring your ideas to
-            life, let's connect! I'm always open to discussing new projects and
-            opportunities.
+            If you are looking for a dedicated developer to bring your ideas to
+            life, let&apos;s connect! I am always open to discussing new
+            projects and opportunities.
           </h3>
         </div>
         <form className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg bg-white/60 rounded-lg">

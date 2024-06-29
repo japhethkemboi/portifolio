@@ -6,7 +6,7 @@ import Dandia from "./dandia";
 import Image from "next/image";
 
 const Projects = () => {
-  const hexToRgba = (hex, opacity) => {
+  const hexToRgba = (hex: string, opacity: number) => {
     hex = hex.replace("#", "");
     if (hex.length === 3) {
       hex = hex
