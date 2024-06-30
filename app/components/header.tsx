@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed flex w-full backdrop-blur-lg border-b z-10 justify-between whitespace-nowrap p-4 xs:p-2 text-[var(--link-color)] xs:text-xs text-sm md:text-base">
+      <header className="fixed flex w-full border-b z-10 justify-between whitespace-nowrap p-4 xs:p-2 text-[var(--link-color)] xs:text-xs text-sm md:text-base">
         <button
           onClick={() => setIsNavOpen(!isNavOpen)}
           className="p-2 text-lg sm:hidden"
@@ -57,10 +57,10 @@ const Header = () => {
       </header>
       {isNavOpen && (
         <div className="absolute z-10 flex flex-col top-0 bottom-0 overflow-hidden w-full bg-white/30">
-          <div className="flex flex-col justify-end text-[var(--link-color)] gap-4 min-h-screen overflow-hidden w-1/2 backdrop-blur-lg bg-white/80 p-4">
+          <div className="flex flex-col justify-center text-[var(--link-color)] gap-4 min-h-screen overflow-hidden w-3/4 backdrop-blur-lg bg-white/80 p-4">
             <button
               onClick={() => setIsNavOpen(false)}
-              className="flex gap-2 text-[var(--primary-color)] hover:text-white p-2 hover:bg-[var(--primary-color)] border-2 border-[var(--primary-color)] items-center rounded"
+              className="flex gap-2 text-[var(--primary-color)] hover:text-white p-2 hover:bg-[var(--primary-color)] border-2 border-[var(--primary-color)] items-center"
             >
               <RiCloseCircleFill />
               Close
@@ -91,7 +91,7 @@ const Header = () => {
             </a>
           </div>
           <div
-            className="absolute w-1/2 right-0 top-0 bottom-0"
+            className="absolute w-1/4 right-0 top-0 bottom-0"
             onClick={() => setIsNavOpen(false)}
           ></div>
         </div>

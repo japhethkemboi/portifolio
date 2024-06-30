@@ -12,8 +12,8 @@ export default function Home() {
         backgroundImage: `url("/images/ikhlas-rahman-EWimyN-lBmQ-unsplash.jpg")`,
       }}
     >
-      <Header />
-      <div className="flex flex-col bg-white/80 backdrop-blur w-full gap-12">
+      <div className="flex flex-col bg-white/80 backdrop-blur">
+        <Header />
         <Hero />
         <Projects />
         <Contact />
