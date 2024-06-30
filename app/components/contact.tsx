@@ -3,12 +3,12 @@ import React from "react";
 function Contact() {
   return (
     <section id="contact" className="flex flex-col gap-2">
-      <h2 className="self-center xs:text-xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-extrabold">
+      <h2 className="self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
         Get in touch with me
       </h2>
       <div className="flex flex-col lg:flex-row gap-6 p-8 items-center justify-evenly">
         <div className="flex flex-col text-center gap-4 max-w-lg">
-          <h3 className="xs:text-sm md:text-lg lg:text-4xl font-semibold mb-4">
+          <h3 className="xs:text-sm md:text-lg lg:text-4xl mb-4">
             If you are looking for a dedicated developer to bring your ideas to
             life, let&apos;s connect! I am always open to discussing new
             projects and opportunities.

@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed flex w-full border-b z-10 justify-between whitespace-nowrap p-4 xs:p-2 text-[var(--link-color)] xs:text-xs text-sm md:text-base">
+      <header className="fixed overscroll-none flex w-full border-b z-10 justify-between whitespace-nowrap p-4 xs:p-2 text-[var(--link-color)] xs:text-xs text-sm md:text-base">
         <button
           onClick={() => setIsNavOpen(!isNavOpen)}
           className="p-2 text-lg sm:hidden"

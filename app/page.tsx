@@ -7,7 +7,7 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <main
-      className="flex flex-col bg-cover bg-no-repeat h-screen overflow-y-scroll overflow-x-hidden"
+      className="flex flex-col no-scrollbar h-screen bg-cover bg-blend-luminosity bg-no-repeat overflow-y-auto overflow-x-hidden"
       style={{
         backgroundImage: `url("/images/ikhlas-rahman-EWimyN-lBmQ-unsplash.jpg")`,
       }}
