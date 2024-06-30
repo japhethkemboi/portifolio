@@ -21,10 +21,10 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
   const [isCommentsUp, setIsCommentsUp] = useState(false);
 
   return (
-    <div className="absolute overscroll-none z-20 flex items-center sm:py-10 top-0 h-[(100vh-80px)] bg-white/30 justify-center">
-      <div className="flex sm:max-w-lg py-4 self-center h-full flex-col items-center w-full bg-white/80 backdrop-blur sm:rounded sm:p-4">
-        <div className="flex w-full">
-          <div className="flex gap-4 items-center ">
+    <div className="absolute overscroll-none z-20 flex w-full items-center sm:py-10 top-0 h-[(100vh-80px)] sm:h-screen bg-white/30 justify-center">
+      <div className="flex sm:max-w-lg py-4 self-center h-screen sm:h-full pb-20 flex-col items-center w-full bg-white/80 backdrop-blur sm:rounded sm:p-4">
+        <div className="absolute z-30 flex w-full backdrop-blur bg-white/40 pb-2">
+          <div className="flex gap-4 items-center">
             <button
               onClick={() => setIsStatusUp(false)}
               className="flex items-center hover:opacity-50"
@@ -41,7 +41,7 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
             <h2 className="font-bold">Japheth Kemboi</h2>
           </div>
         </div>
-        <div className="flex h-3/4 mt-2 overflow-hidden items-center">
+        <div className="grow flex mt-2 items-center">
           <Carousel
             showStatus={false}
             dynamicHeight={true}
@@ -53,42 +53,23 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
               alt="Japheth Kemboi Full stack developer"
               width={400}
               height={400}
-              className="max-w-lg object-scale-down object-center"
+              className="object-contain w-full h-auto self-center"
             />
             <Image
-              src="/images/japhe3.png"
+              src="/images/japhe.png"
               alt="Japheth Kemboi Full stack developer"
               width={400}
               height={400}
-              className="max-w-lg object-scale-down object-center"
+              className="object-contain w-full h-auto self-center"
+            />
+            <Image
+              src="/images/6641db24636318efa3c9d15b95b6f662.jpg"
+              alt="Japheth Kemboi Full stack developer"
+              width={400}
+              height={400}
+              className="object-contain w-full h-auto self-center"
             />
           </Carousel>
-        </div>
-        <div className="flex gap-4 justify-center p-2 items-center text-2xl w-full text-black/90">
-          <div className="flex gap-2 grow items-center relative">
-            <input
-              className="w-full rounded-full text-base p-2 px-6 h-14 bg-white/40 focus:outline-none focus:border-black border"
-              placeholder="Leave a comment"
-            />
-            <button className="p-2 rounded-full bg-white/60 absolute right-1 hover:bg-[var(--primary-color)] hover:text-white">
-              <BiSolidSend />
-            </button>
-          </div>
-          <button
-            onClick={() => setIsCommentsUp(true)}
-            className="flex flex-col justify-center items-center hover:opacity-40"
-          >
-            <BiComment />
-            {/* <BiSolidComment /> */}
-            <span className="text-sm">20</span>
-          </button>
-          <button className="flex flex-col justify-center items-center">
-            <button className="hover:opacity-40">
-              <BiHeart />
-              {/* <BiSolidHeart /> */}
-            </button>
-            <span className="text-sm">100</span>
-          </button>
         </div>
         {isCommentsUp && (
           <div className="absolute ease-in-out w-full bottom-0 z-30 flex flex-col backdrop-blur-lg bg-white/80 h-3/4 rounded-t-lg">
@@ -103,17 +84,34 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
               <p className="w-full">Comment 1</p>
               <p className="w-full">Comment 2</p>
             </div>
-            <div className="flex gap-2 mb-2 p-4 items-center relative backdrop-blur-sm">
-              <input
-                className="w-full rounded-full text-base p-2 px-6 h-14 bg-white/40 border focus:outline-none focus:border-black"
-                placeholder="Leave a comment"
-              />
-              <button className="p-2 rounded-full bg-white/60 absolute right-5 hover:bg-[var(--primary-color)] hover:text-white">
-                <BiSolidSend size={30} />
-              </button>
-            </div>
           </div>
         )}
+        <div className="absolute backdrop-blur bg-white/40 z-30 bottom-20 sm:bottom-2 flex gap-4 mt-auto justify-center p-2 items-center text-2xl w-full text-black/90">
+          <div className="flex gap-2 grow items-center relative">
+            <input
+              className="w-full rounded-full text-base p-2 px-6 h-14 bg-white/40 focus:outline-none focus:border-black border"
+              placeholder="Leave a comment"
+            />
+            <button className="p-2 rounded-full bg-white/60 absolute right-1 hover:bg-[var(--primary-color)] hover:text-white">
+              <BiSolidSend />
+            </button>
+          </div>
+          <button
+            onClick={() => setIsCommentsUp(!isCommentsUp)}
+            className="flex flex-col justify-center items-center hover:opacity-40"
+          >
+            <BiComment />
+            {/* <BiSolidComment /> */}
+            <span className="text-sm">20</span>
+          </button>
+          <button className="flex flex-col justify-center items-center">
+            <button className="hover:opacity-40">
+              <BiHeart />
+              {/* <BiSolidHeart /> */}
+            </button>
+            <span className="text-sm">100</span>
+          </button>
+        </div>
       </div>
     </div>
   );

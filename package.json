@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.15",
     "next": "^14.2.3",
     "nextjs-simple-typewriter": "^5.2.2",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
