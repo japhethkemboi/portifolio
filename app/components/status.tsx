@@ -21,7 +21,7 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
   const [isCommentsUp, setIsCommentsUp] = useState(false);
 
   return (
-    <div className="absolute overscroll-none z-20 flex items-center sm:py-10 top-0 h-full max-h-screen w-full bg-white/30 justify-center">
+    <div className="absolute overscroll-none z-20 flex items-center sm:py-10 top-0 h-[(100vh-80px)] bg-white/30 justify-center">
       <div className="flex sm:max-w-lg py-4 self-center h-full flex-col items-center w-full bg-white/80 backdrop-blur sm:rounded sm:p-4">
         <div className="flex w-full">
           <div className="flex gap-4 items-center ">
@@ -58,13 +58,13 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
             <Image
               src="/images/japhe3.png"
               alt="Japheth Kemboi Full stack developer"
-              width={1000}
-              height={1000}
-              className="w-full object-scale-down object-center"
+              width={400}
+              height={400}
+              className="max-w-lg object-scale-down object-center"
             />
           </Carousel>
         </div>
-        <div className="flex gap-4 mt-auto justify-center p-2 items-center text-2xl w-full text-black/90">
+        <div className="flex gap-4 justify-center p-2 items-center text-2xl w-full text-black/90">
           <div className="flex gap-2 grow items-center relative">
             <input
               className="w-full rounded-full text-base p-2 px-6 h-14 bg-white/40 focus:outline-none focus:border-black border"
