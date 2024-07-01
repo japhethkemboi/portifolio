@@ -262,7 +262,9 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      {isStatusUp && <Status setIsStatusUp={setIsStatusUp} />}
+      {isStatusUp && (
+        <Status isStatusUp={isStatusUp} setIsStatusUp={setIsStatusUp} />
+      )}
     </>
   );
 };
