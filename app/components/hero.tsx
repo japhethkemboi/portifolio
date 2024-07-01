@@ -25,6 +25,7 @@ import Status from "./status";
 
 const Hero = () => {
   const [isStatusUp, setIsStatusUp] = useState(false);
+
   return (
     <>
       <section className="min-h-screen gap-8 w-full flex flex-col items-center mt-14 justify-evenly">
@@ -44,14 +45,14 @@ const Hero = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <h1 className="flex items-center font-extrabold gap-2 text-3xl self-center sm:self-start sm:text-3xl md:text-3xl xl:text-4xl ease-in">
+                <h1 className="flex text-black dark:text-white items-center font-extrabold gap-2 text-3xl self-center sm:self-start sm:text-3xl md:text-3xl xl:text-4xl ease-in">
                   Japheth Kemboi
-                  <MdVerified color="white" fill="blue" />
+                  <MdVerified fill="blue" className="dark:fill-blue-500" />
                 </h1>
-                <h2 className="text-black/80 text-lg md:text-xl">
+                <h2 className="text-black/80 dark:text-white/60 sm:text-lg md:text-xl">
                   Full stack developer
                 </h2>
-                <p className="text-[var(--text-color)] italic">
+                <p className="text-[var(--text-color)] dark:text-white/50 text-sm sm:text-base italic">
                   I develop web and mobile apps.
                 </p>
               </div>
@@ -97,13 +98,13 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center w-full justify-evenly p-4 rounded text-sm xs:text-xs md:text-base">
-            <h2 className="flex self-center font-bold gap-2 xs:text-xl text-2xl md:text-3xl lg:text-4xl ease-in">
+          <div className="flex flex-col items-center w-full justify-evenly p-4 rounded sm:text-sm text-xs md:text-base">
+            <h2 className="flex text-black dark:text-white self-center font-bold gap-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl ease-in">
               Tech stack
             </h2>
             <div className="flex p-4 flex-wrap gap-4 justify-evenly">
-              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 grow items-center">
-                <h3 className="xs:text-base text-lg md:text-xl lg:text-2xl font-bold max-w-md">
+              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 dark:bg-gray-800 grow items-center">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold max-w-md text-black dark:text-white">
                   Languages
                 </h3>
                 <ul className="flex flex-col gap-2">
@@ -124,8 +125,8 @@ const Hero = () => {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 grow items-center">
-                <h3 className="xs:text-base text-lg md:text-xl lg:text-2xl font-bold max-w-md">
+              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 dark:bg-gray-800 grow items-center">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold max-w-md text-black dark:text-white">
                   Front-End
                 </h3>
                 <ul className="flex flex-col gap-2 h-full">
@@ -143,8 +144,8 @@ const Hero = () => {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 grow items-center">
-                <h3 className="xs:text-base text-lg md:text-xl lg:text-2xl font-bold max-w-md">
+              <div className="flex flex-col gap-4 rounded-lg p-4 bg-white/40 dark:bg-gray-800 grow items-center">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold max-w-md text-black dark:text-white">
                   Back-End
                 </h3>
                 <ul className="flex flex-col">
@@ -165,7 +166,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="relative bg-white/40 p-4 w-full inline-flex gap-8 flex-nowrap whitespace-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] xs:text-sm text-sm md:text-base">
+        <div className="relative bg-white/40 dark:bg-gray-800 p-4 w-full inline-flex gap-8 flex-nowrap whitespace-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] text-sm sm:text-sm md:text-base dark:text-white/40">
           <div className="flex gap-8 animate-marquee">
             <li className="flex items-center gap-2">Dandia</li>
             <li className="flex items-center gap-2">BurghExpress</li>
@@ -214,7 +215,7 @@ const Hero = () => {
               <SiMongodb /> MongoDB
             </li>
           </div>
-          <div className="flex gap-8 animate-marquee2 absolute">
+          <div className="flex gap-8 animate-marquee2 absolute ml-36">
             <li className="flex items-center gap-2">Dandia</li>
             <li className="flex items-center gap-2">BurghExpress</li>
             <li className="flex items-center gap-2">Priority 1 Radio</li>

@@ -12,7 +12,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 
 const Dandia = () => {
   return (
-    <div className="flex flex-col rounded-lg bg-white/40 gap-4 w-full p-4 md:grid grid-cols-2">
+    <div className="flex flex-col rounded-lg bg-white/40 gap-4 w-full p-4 sm:grid grid-cols-2">
       <div className="flex flex-col gap-2 text-[#2F2440]">
         <h3 className="font-bold text-black text-2xl mb-4 sm:text-3xl items-center md:text-4xl lg:text-5xl flex gap-2">
           Dandia

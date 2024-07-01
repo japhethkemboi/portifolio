@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState, Dispatch, SetStateAction } from "react";
+import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
 import {
   BiChevronLeft,
   BiComment,
@@ -14,15 +14,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import profileDark from "../../public/images/japhe3.png";
 
 interface StatusProps {
+  isStatusUp: boolean;
   setIsStatusUp: Dispatch<SetStateAction<boolean>>;
 }
 
-const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
+const Status: React.FC<StatusProps> = ({ isStatusUp, setIsStatusUp }) => {
   const [isCommentsUp, setIsCommentsUp] = useState(false);
+
+  useEffect(() => {
+    isStatusUp
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isStatusUp]);
 
   return (
     <div className="absolute overscroll-none z-20 flex w-full items-center sm:py-10 top-0 h-[(100vh-80px)] sm:h-screen bg-white/30 justify-center">
-      <div className="flex sm:max-w-lg py-4 self-center h-screen sm:h-full pb-20 flex-col items-center w-full bg-white/80 backdrop-blur sm:rounded sm:p-4">
+      <div className="flex sm:max-w-lg py-4 self-center h-screen sm:h-full pb-20 flex-col items-center w-full bg-white/60 backdrop-blur sm:rounded sm:p-4">
         <div className="absolute z-30 flex w-full backdrop-blur bg-white/40 pb-2">
           <div className="flex gap-4 items-center">
             <button
@@ -47,6 +54,8 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
             dynamicHeight={true}
             useKeyboardArrows={true}
             autoPlay={true}
+            infiniteLoop={true}
+            showIndicators={false}
           >
             <Image
               src="/images/japhe3.png"
@@ -92,7 +101,7 @@ const Status: React.FC<StatusProps> = ({ setIsStatusUp }) => {
               className="w-full rounded-full text-base p-2 px-6 h-14 bg-white/40 focus:outline-none focus:border-black border"
               placeholder="Leave a comment"
             />
-            <button className="p-2 rounded-full bg-white/60 absolute right-1 hover:bg-[var(--primary-color)] hover:text-white">
+            <button className="p-2 rounded-full bg-white/60 absolute right-2 hover:bg-[var(--primary-color)] hover:text-white">
               <BiSolidSend />
             </button>
           </div>

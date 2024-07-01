@@ -1,24 +1,24 @@
+"use client";
 import Hero from "./components/hero";
 import Header from "./components/header";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { theme } = useTheme();
+  const isDark = theme == "dark";
+
   return (
-    <main
-      className="flex flex-col no-scrollbar h-screen bg-cover bg-blend-luminosity bg-no-repeat overflow-y-auto overflow-x-hidden"
-      style={{
-        backgroundImage: `url("/images/ikhlas-rahman-EWimyN-lBmQ-unsplash.jpg")`,
-      }}
-    >
-      <div className="flex flex-col bg-white/80 backdrop-blur">
+    <div className={isDark ? "dark" : ""}>
+      <main className="flex flex-col backdrop-blur bg-white/80 dark:bg-black dark:text-white/80">
         <Header />
         <Hero />
         <Projects />
         <Contact />
         <Footer />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

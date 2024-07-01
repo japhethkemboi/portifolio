@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full items-center justify-center p-8 text-sm xs:text-xs lg:text-base">
+    <footer className="flex w-full items-center justify-center p-8 sm:text-sm text-xs lg:text-base">
       <div className="flex flex-col justify-center gap-4 md:justify-between md:flex-row w-full p-4 rounded-lg bg-white/60 items-center">
         <span className="">Copyright 2024</span>
         <div className="flex gap-4 text-[var(--link-color)] items-center justify-center font-semibold">
@@ -22,7 +22,7 @@ const Footer = () => {
             Resume
           </a>
         </div>
-        <div className="flex space-x-4 items-center">
+        <div className="flex space-x-4 items-center text-black">
           <a
             target="_blank"
             href="https://github.com/TheeAnon"
