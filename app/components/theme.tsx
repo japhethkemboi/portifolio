@@ -9,7 +9,7 @@ export const ToggleTheme = () => {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="flex gap-2 p-2 rounded-full bg-black/70 text-white dark:text-black dark:bg-white/80 hover:bg-black hover:text-[var(--active-link-color)] dark:hover:text-black dark:hover:bg-white"
+      className="flex gap-2 p-2 text-black dark:hover:text-black border lg:text-xl rounded-full hover:opacity-70 hover:bg-gray-800 hover:text-white dark:hover:bg-white/60"
     >
       {isDark ? <BiSun /> : <BiMoon />}
     </button>

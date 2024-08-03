@@ -17,12 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth no-scrollbar">
-      <body
-        className={`bg-cover bg-right ${inter.className}`}
-        style={{
-          backgroundImage: `url("/images/bg.jpg")`,
-        }}
-      >
+      <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
         </ThemeProvider>

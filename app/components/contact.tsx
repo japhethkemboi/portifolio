@@ -64,7 +64,7 @@ function Contact() {
       </div>
       <form
         onSubmit={(e) => onSubmit(e)}
-        className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg bg-white/60 dark:bg-gray-800 rounded-lg"
+        className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg border bg-white/60 dark:bg-gray-800 rounded-lg"
       >
         {error && (
           <span className="w-full rounded text-xs md:text-sm bg-red-600 text-white p-2 text-center">

@@ -1,54 +1,80 @@
-{
-  "items": {
-    "dandia": {
-      "title": "Dandia",
-      "desc": "A versatile Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
-      "titleColor": "#c56363",
-      "textColor": "#000",
-      "bgColor": "#fff",
-      "images": [
-        "/images/dandia/1.jpg",
-        "/images/dandia/2.jpg",
-        "/images/dandia/3.jpg",
-        "/images/dandia/4.jpg",
-        "/images/dandia/5.jpg",
-        "/images/dandia/6.jpg"
-      ],
-      "stack": [
-        "Javascript",
-        "React Native",
-        "Node js",
-        "MongoDB",
-        "Tailwindcss"
-      ]
-    },
-    "questionnaire": {
-      "title": "Questionnaire app",
-      "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
-      "titleColor": "#fff",
-      "textColor": "#efffff",
-      "bgColor": "#28cab2",
-      "images": [
-        "/images/questionnaire/1.jpg",
-        "/images/questionnaire/2.jpg",
-        "/images/questionnaire/3.jpg",
-        "/images/questionnaire/4.jpg",
-        "/images/questionnaire/5.jpg"
-      ],
-      "stack": ["Javascript", "React Native", "Firebase", "Tailwindcss"]
-    },
-    "ewriters": {
-      "title": "eWriters",
-      "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
-      "titleColor": "#03a9f4",
-      "textColor": "#000",
-      "bgColor": "#e3edf6",
-      "images": [
-        "/images/ewriters/1.jpg",
-        "/images/ewriters/2.jpg",
-        "/images/ewriters/3.jpg"
-      ],
-      "stack": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss"]
-    }
+[
+  {
+    "title": "Sports Arbitrage",
+    "desc": "A sports arbitrage web app that scraps odds, looks for arbitrage opportunities and notifys you.",
+    "titleColor": "#c56363",
+    "textColor": "#000",
+    "bgColor": "#fff",
+    "images": ["/images/rr28/1.png"],
+    "tags": [
+      "Javascript",
+      "Python",
+      "MySQL",
+      "Reactjs",
+      "Django",
+      "Tailwindcss",
+      "AWS",
+      "Cronjobs",
+      "Scrapping",
+      "Latvian",
+      "Upwork"
+    ]
+  },
+  {
+    "title": "Dandia",
+    "desc": "A versatile Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
+    "titleColor": "#c56363",
+    "textColor": "#000",
+    "bgColor": "#fff",
+    "images": [
+      "/images/dandia/1.jpg",
+      "/images/dandia/2.jpg",
+      "/images/dandia/3.jpg",
+      "/images/dandia/4.jpg",
+      "/images/dandia/5.jpg",
+      "/images/dandia/6.jpg"
+    ],
+    "tags": ["Javascript", "React Native", "Node js", "MongoDB", "Tailwindcss"]
+  },
+  {
+    "title": "Questionnaire app",
+    "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
+    "titleColor": "#fff",
+    "textColor": "#efffff",
+    "bgColor": "#28cab2",
+    "images": [
+      "/images/questionnaire/1.jpg",
+      "/images/questionnaire/2.jpg",
+      "/images/questionnaire/3.jpg",
+      "/images/questionnaire/4.jpg",
+      "/images/questionnaire/5.jpg"
+    ],
+    "tags": ["Javascript", "React Native", "Firebase", "Tailwindcss", "Upwork"]
+  },
+  {
+    "title": "eWriters",
+    "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
+    "titleColor": "#03a9f4",
+    "textColor": "#000",
+    "bgColor": "#e3edf6",
+    "images": [
+      "/images/ewriters/1.jpg",
+      "/images/ewriters/2.jpg",
+      "/images/ewriters/3.jpg"
+    ],
+    "tags": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss", "Personal"]
+  },
+  {
+    "title": "BurghExpress",
+    "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
+    "titleColor": "#03a9f4",
+    "textColor": "#000",
+    "bgColor": "#e3edf6",
+    "images": [
+      "/images/ewriters/1.jpg",
+      "/images/ewriters/2.jpg",
+      "/images/ewriters/3.jpg"
+    ],
+    "tags": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss", "Upwork"]
   }
-}
+]

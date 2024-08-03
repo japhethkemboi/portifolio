@@ -11,12 +11,11 @@ const Header = () => {
   const classes = {
     navButton:
       "hover:bg-white/60 hover:text-[var(--primary-color)] dark:hover:text-white/80 p-2 px-3",
-    activeNavButton:
-      "bg-[var(--link-hover-color)] text-white/80 p-2 px-3 hover:bg-white/60 hover:text-[var(--primary-color)] dark:hover:text-black",
+    activeNavButton: "border-r-4 border-[var(--link-hover-color)] p-2 px-3",
     headerButton:
-      "hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)] dark:text-white/60",
+      "hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]",
     activeHeaderButton:
-      "bg-[var(--link-hover-color)] text-white p-2 px-3 rounded-full",
+      "border-b-4 border-[var(--link-hover-color)] p-1 px-3 text-[var(--primary-color)] font-bold",
   };
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed dark:text-white flex w-full border-b dark:border-white/20 z-10 justify-between whitespace-nowrap p-4 xs:p-2 text-[var(--link-color)] text-xs sm:text-sm md:text-base">
+      <header className="fixed dark:text-gray-800 flex w-full z-10 justify-between whitespace-nowrap sm:p-4 p-2 text-[var(--link-color)] text-xs sm:text-sm md:text-base lg:text-lg backdrop-blur bg-white/80 border-b">
         <button
           onClick={() => setIsNavOpen(true)}
           className="p-2 text-lg sm:hidden"
@@ -35,7 +34,7 @@ const Header = () => {
           {isNavOpen ? <RiCloseFill /> : <RiMenu5Fill />}
         </button>
 
-        <div className="hidden sm:flex gap-2 md:gap-4 text-[var(--link-color)] items-center">
+        <div className="hidden sm:flex gap-2 md:gap-4 text-[var(--link-color)] dark:text-gray-800 items-center">
           <a href="#home" className={classes.activeHeaderButton}>
             Home
           </a>
@@ -51,16 +50,16 @@ const Header = () => {
         </div>
         <div className="flex gap-2 items-center">
           <ToggleTheme />
-          <button className="p-2 lg:hidden rounded-full bg-white/40 hover:bg-[var(--primary-color)] hover:text-[var(--active-link-color)]">
+          <button className="p-2 lg:hidden rounded-full font-bold lg:text-xl bg-white/40 hover:bg-[var(--primary-color)] hover:text-[var(--active-link-color)]">
             <BiSearch />
           </button>
-          <div className="px-4 hidden rounded-full lg:flex bg-white/40 items-center">
+          <div className="px-4 hidden rounded-full lg:flex border items-center">
             <CgSearch />
             <input
               className="grow bg-transparent p-2 items-center focus:outline-none"
               placeholder="Search"
             />
-            <button>
+            <button className="hidden">
               <CgClose />
             </button>
           </div>

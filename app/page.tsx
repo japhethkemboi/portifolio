@@ -12,8 +12,8 @@ export default function Home() {
 
   return (
     <div className={isDark ? "dark" : ""}>
+      <Header />
       <main className="flex flex-col backdrop-blur bg-white/80 dark:bg-black dark:text-white/80">
-        <Header />
         <Hero />
         <Projects />
         <Contact />

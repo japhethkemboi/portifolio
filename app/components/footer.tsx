@@ -6,9 +6,9 @@ import { IoMdMail } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="flex w-full items-center justify-center p-8 sm:text-sm text-xs lg:text-base">
-      <div className="flex flex-col justify-center gap-4 md:justify-between md:flex-row w-full p-4 rounded-lg bg-white/60 items-center">
+      <div className="flex flex-col justify-center gap-4 md:justify-between md:flex-row w-full p-4 rounded-lg border dark:bg-gray-800 items-center">
         <span className="">Copyright 2024</span>
-        <div className="flex gap-4 text-[var(--link-color)] items-center justify-center font-semibold">
+        <div className="flex gap-4 text-[var(--link-color)] dark:text-white/80 items-center justify-center font-semibold">
           <a href="#home" className="hover:text-[var(--link-hover-color)]">
             Home
           </a>
