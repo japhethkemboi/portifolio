@@ -50,7 +50,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col lg:flex-row gap-2 p-8 items-center justify-evenly"
+      className="flex flex-col lg:flex-row gap-2 p-8 items-center justify-evenly border-t"
     >
       <div className="flex flex-col text-center gap-4 max-w-lg">
         <h2 className="self-center text-black dark:text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
@@ -64,64 +64,52 @@ function Contact() {
       </div>
       <form
         onSubmit={(e) => onSubmit(e)}
-        className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg border bg-white/60 dark:bg-gray-800 rounded-lg"
+        className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg border bg-white/60 dark:bg-gray-800 rounded-lg text-sm"
       >
         {error && (
-          <span className="w-full rounded text-xs md:text-sm bg-red-600 text-white p-2 text-center">
+          <span className="w-full text-xs md:text-sm text-red-600">
             {error}
           </span>
         )}
         {success && (
-          <span className="w-full rounded text-xs md:text-sm bg-green-600 text-white p-2 text-center">
+          <span className="w-full text-xs md:text-sm text-green-600">
             {success}
           </span>
         )}
-        <div className="flex flex-col gap-2">
-          <label className="text-[var(--sub-text-color)]">Full name</label>
-          <input
-            className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
-            name="name"
-            value={formData.name}
-            onChange={(e) => onChange(e)}
-            required
-            placeholder="John Doe"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <label className="text-[var(--sub-text-color)]">Email</label>
-          <input
-            className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={(e) => onChange(e)}
-            required
-            placeholder="client@gmail.com"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <label className="text-[var(--sub-text-color)]">Subject</label>
-          <input
-            className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
-            name="subject"
-            value={formData.subject}
-            onChange={(e) => onChange(e)}
-            required
-            placeholder="What would you like to talk about"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <label className="text-[var(--sub-text-color)]">Message</label>
-          <textarea
-            className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
-            name="message"
-            rows={4}
-            value={formData.message}
-            onChange={(e) => onChange(e)}
-            required
-            placeholder="Write your message here. Tell me anything"
-          ></textarea>
-        </div>
+        <input
+          className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
+          name="name"
+          value={formData.name}
+          onChange={(e) => onChange(e)}
+          required
+          placeholder="Full name"
+        />
+        <input
+          className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={(e) => onChange(e)}
+          required
+          placeholder="Email address"
+        />
+        <input
+          className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
+          name="subject"
+          value={formData.subject}
+          onChange={(e) => onChange(e)}
+          required
+          placeholder="Subject or Topic"
+        />
+        <textarea
+          className="flex border rounded focus:outline-none focus:border-black dark:border-white/30 dark:focus:border-white/70 p-2 bg-transparent"
+          name="message"
+          rows={4}
+          value={formData.message}
+          onChange={(e) => onChange(e)}
+          required
+          placeholder="Write your message here. Tell me anything"
+        ></textarea>
         <button
           disabled={loading}
           className="p-2 px-4 flex items-center justify-center text-white dark:text-white/90 bg-[var(--primary-color)] rounded hover:opacity-70"
