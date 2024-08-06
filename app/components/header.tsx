@@ -27,7 +27,7 @@ const Header = () => {
 
         <div className="hidden sm:flex gap-2 md:gap-4 text-[var(--link-color)] dark:text-gray-800 items-center">
           <a
-            href="#home"
+            href="/"
             className="border-b-4 border-[var(--link-hover-color)] p-1 px-3 text-[var(--primary-color)] font-bold"
           >
             Home

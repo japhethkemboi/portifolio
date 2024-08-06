@@ -53,35 +53,14 @@ const ProjectTile: React.FC<Props> = ({ props }) => {
       >
         {props.desc}
       </p>
-      <div className="flex gap-2 overflow-hidden">
-        {props.images.map((image, index) => (
-          <button
-            key={index}
-            className="relative shrink-0 w-14 h-14 overflow-hidden border hover:scale-125 hover:opacity-70"
-          >
-            <Image
-              src={image}
-              alt={`${props.title} screenshot`}
-              layout="fill"
-              objectFit="cover"
-            />
-          </button>
-        ))}
-      </div>
-      <div className="flex gap-2 flex-wrap mt-auto">
-        {props.tags.map((tag, index) => (
-          <a
-            href={tag}
-            key={index}
-            style={{ color: props.theme.secondary }}
-            className="p-1 text-xs whitespace-nowrap hover:underline"
-          >
-            #{tag}
-          </a>
-        ))}
+      <div className="relative shrink-0 w-14 h-14 overflow-hidden border hover:scale-125 hover:opacity-70">
+        <Image
+          src={image}
+          alt={`${props.title} screenshot`}
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
   );
 };
-
-export default ProjectTile;

@@ -46,7 +46,7 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap gap-4 justify-evenly text-[var(--text-color)] xs:text-sm items-center md:text-xl self-center lg:self-start">
+          <div className="flex flex-wrap gap-4 justify-evenly text-[var(--text-color)] text-sm items-center md:text-xl self-center lg:self-start">
             <a
               target="_blank"
               href="mailto:japhethkemboi69@gmail.com"

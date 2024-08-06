@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { GrNext, GrPrevious } from "react-icons/gr";
 import {
   RiSingleQuotesL,
   RiSingleQuotesR,
@@ -8,7 +7,7 @@ import {
 import testimonials from "./testimonials.json";
 import { BsChatQuote } from "react-icons/bs";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Testimonials = () => {
   return (
@@ -72,12 +71,6 @@ const Testimonials = () => {
           </div>
         ))}
       </Carousel>
-      {/* <button className="border rounded-full hover:scale-125 p-2">
-          <GrPrevious size={40} />
-        </button>
-        <button className="border rounded-full hover:scale-125 p-2">
-          <GrNext size={40} />
-        </button> */}
     </div>
   );
 };

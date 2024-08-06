@@ -5,12 +5,9 @@ import projects from "./projects.json";
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="flex flex-col p-4 py-14 gap-8 border-t bg-white/60"
-    >
+    <section id="projects" className="flex flex-col p-4 py-14 gap-8 border-t">
       <div className="mt-10">
-        <h2 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black dark:text-white">
+        <h2 className="mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-black dark:text-white">
           Projects
         </h2>
         <p className="mb-4 md:text-lg">Lets shed some light on my work</p>
