@@ -21,22 +21,6 @@
     ]
   },
   {
-    "title": "Dandia",
-    "desc": "A versatile Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
-    "titleColor": "#c56363",
-    "textColor": "#000",
-    "bgColor": "#fff",
-    "images": [
-      "/images/dandia/1.jpg",
-      "/images/dandia/2.jpg",
-      "/images/dandia/3.jpg",
-      "/images/dandia/4.jpg",
-      "/images/dandia/5.jpg",
-      "/images/dandia/6.jpg"
-    ],
-    "tags": ["Javascript", "React Native", "Node js", "MongoDB", "Tailwindcss"]
-  },
-  {
     "title": "Questionnaire app",
     "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
     "titleColor": "#fff",
@@ -52,8 +36,8 @@
     "tags": ["Javascript", "React Native", "Firebase", "Tailwindcss", "Upwork"]
   },
   {
-    "title": "eWriters",
-    "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
+    "title": "The Northern Market",
+    "desc": "Freelancing web app (prototype) connecting clients and freelancers while ensuring protection for both parties.",
     "titleColor": "#03a9f4",
     "textColor": "#000",
     "bgColor": "#e3edf6",
@@ -62,11 +46,20 @@
       "/images/ewriters/2.jpg",
       "/images/ewriters/3.jpg"
     ],
-    "tags": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss", "Personal"]
+    "tags": [
+      "HTML",
+      "Javascript",
+      "CSS",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "Upwork",
+      "Canadian"
+    ]
   },
   {
     "title": "BurghExpress",
-    "desc": "Freelancing web app facilitating secure connections between clients and freelancers while ensuring protection for both parties.",
+    "desc": "A canadian food delivery application that links resturants to food lovers.",
     "titleColor": "#03a9f4",
     "textColor": "#000",
     "bgColor": "#e3edf6",
@@ -75,6 +68,37 @@
       "/images/ewriters/2.jpg",
       "/images/ewriters/3.jpg"
     ],
-    "tags": ["Javascript", "React", "PHP", "MySQL", "Tailwindcss", "Upwork"]
+    "tags": [
+      "Javascript",
+      "Python",
+      "React Native",
+      "Django",
+      "MySQL",
+      "Upwork"
+    ]
+  },
+  {
+    "title": "Dandia",
+    "desc": "A Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
+    "titleColor": "#c56363",
+    "textColor": "#000",
+    "bgColor": "#fff",
+    "images": [
+      "/images/dandia/1.jpg",
+      "/images/dandia/2.jpg",
+      "/images/dandia/3.jpg",
+      "/images/dandia/4.jpg",
+      "/images/dandia/5.jpg",
+      "/images/dandia/6.jpg"
+    ],
+    "tags": [
+      "Javascript",
+      "Python",
+      "React Native",
+      "Django",
+      "MySQL",
+      "Tailwindcss",
+      "API"
+    ]
   }
 ]

@@ -22,6 +22,9 @@ interface Project {
   desc: string;
   images: string[];
   tags: string[];
+  titleColor: string;
+  textColor: string;
+  bgColor: string;
 }
 
 interface Props {
@@ -30,11 +33,19 @@ interface Props {
 
 const ProjectTile: React.FC<Props> = ({ props }) => {
   return (
-    <div className="flex flex-col rounded-lg p-2 border text-xs lg:text-sm gap-4">
-      <h1 className="font-bold text-lg lg:text-xl md:block hidded">
+    <div
+      className={`flex flex-col rounded-lg p-2 border text-xs lg:text-sm gap-4 bg-[${props.bgColor}]`}
+    >
+      <h1
+        className={`font-bold text-lg lg:text-xl md:block hidded text-[${props.titleColor}]`}
+      >
         {props.title}
       </h1>
-      <p className="text-gray-600 text-ellipsis line-clamp-3">{props.desc}</p>
+      <p
+        className={`text-gray-600 text-ellipsis line-clamp-3 text-[${props.textColor}]`}
+      >
+        {props.desc}
+      </p>
       <div className="flex gap-2 overflow-hidden">
         {props.images.map((image, index) => (
           <button

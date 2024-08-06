@@ -15,7 +15,7 @@ const Projects = () => {
         </h2>
         <p className="mb-4 md:text-lg">Lets shed some light on my work</p>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <ProjectTile key={index} props={project} />
         ))}

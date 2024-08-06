@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
 import { useTheme } from "next-themes";
+import Testimonials from "./components/testimonials";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="flex flex-col backdrop-blur bg-white/80 dark:bg-black dark:text-white/80">
         <Hero />
         <Projects />
+        <Testimonials />
         <Contact />
         <Footer />
       </main>
