@@ -38,7 +38,7 @@ interface Props {
 const ProjectTile: React.FC<Props> = ({ props }) => {
   return (
     <div
-      className="flex flex-col rounded-lg p-2 border text-xs lg:text-sm gap-4"
+      className="flex flex-col w-full rounded-lg p-2 border text-xs lg:text-sm gap-4"
       style={{ backgroundColor: props.theme.bg }}
     >
       <h1

@@ -5,7 +5,6 @@ import {
   RiUserSmileLine,
 } from "react-icons/ri";
 import testimonials from "./testimonials.json";
-import { BsChatQuote } from "react-icons/bs";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -14,7 +13,6 @@ const Testimonials = () => {
     <div className="mt-10 space-y-10 flex flex-col gap-6 py-10 border-t justify-center p-4 items-center">
       <h1 className="flex gap-2 text-black dark:text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
         What Previous clients say about me
-        <BsChatQuote />
       </h1>
       <Carousel
         showStatus={false}
@@ -29,7 +27,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex flex-col items-center gap-4">
             {testimonial.image && (
-              <div className="relative h-[300px] w-full">
+              <div className="relative h-[200px] md:h-[300px] lg:h-[400px] w-full">
                 <Image
                   src={testimonial.image}
                   alt={`japhe screenshot`}
