@@ -1,21 +1,5 @@
 import Image from "next/image";
-import React from "react";
-
-const hexToRgba = (hex: string, opacity: number) => {
-  hex = hex.replace("#", "");
-  if (hex.length === 3) {
-    hex = hex
-      .split("")
-      .map((hex) => hex + hex)
-      .join("");
-  }
-
-  const r = parseInt(hex.substring(0, 2), 16);
-  const g = parseInt(hex.substring(2, 4), 16);
-  const b = parseInt(hex.substring(4, 6), 16);
-
-  return `rgba(${r}, ${g}, ${b}, ${opacity})`;
-};
+import React, { SetStateAction } from "react";
 
 interface Theme {
   primary: string;
@@ -33,12 +17,13 @@ interface Project {
 
 interface Props {
   props: Project;
+  setModalImage: void;
 }
 
-const ProjectTile: React.FC<Props> = ({ props }) => {
+const ProjectTile: React.FC<Props> = ({ props, setModalImage }) => {
   return (
     <div
-      className="flex flex-col w-full rounded-lg p-2 border text-xs lg:text-sm gap-4"
+      className="flex flex-col w-full p-2 text-xs lg:text-sm gap-4"
       style={{ backgroundColor: props.theme.bg }}
     >
       <h1
@@ -56,8 +41,9 @@ const ProjectTile: React.FC<Props> = ({ props }) => {
       <div className="flex gap-2 overflow-hidden">
         {props.images.map((image, index) => (
           <button
+            onClick={() => setModalImage(image)}
             key={index}
-            className="relative shrink-0 w-14 h-14 overflow-hidden border hover:scale-125 hover:opacity-70"
+            className="relative shrink-0 w-14 h-14 rounded overflow-hidden hover:scale-125 hover:opacity-70"
           >
             <Image
               src={image}

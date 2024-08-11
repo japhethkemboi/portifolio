@@ -1,7 +1,6 @@
 import React from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaUpwork, FaXTwitter } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (

@@ -27,7 +27,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex flex-col items-center gap-4">
             {testimonial.image && (
-              <div className="relative h-[200px] md:h-[300px] lg:h-[400px] w-full">
+              <div className="relative h-[200px] md:h-[300px] 2xl:h-[400px] w-full">
                 <Image
                   src={testimonial.image}
                   alt={`japhe screenshot`}
