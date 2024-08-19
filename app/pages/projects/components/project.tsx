@@ -21,7 +21,7 @@ interface Project {
 
 interface Props {
   props: Project;
-  setModalImage: void;
+  setModalImage: (arg: string) => void;
 }
 
 const Project: React.FC<Props> = ({ props, setModalImage }) => {

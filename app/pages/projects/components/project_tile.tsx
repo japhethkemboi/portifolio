@@ -17,12 +17,12 @@ interface Project {
 
 interface Props {
   props: Project;
-  setModalImage: void;
+  setModalImage: (arg: string) => void;
 }
 
 const ProjectTile: React.FC<Props> = ({ props, setModalImage }) => {
   return (
-    <div className="flex rounded-lg flex-col w-full p-2 text-xs lg:text-sm gap-4 border bg-[#1fc7519d]">
+    <div className="flex rounded-lg flex-col w-full p-2 text-xs lg:text-sm gap-4 border">
       <h1 className="font-bold text-lg lg:text-xl md:block hidded">
         {props.title}
       </h1>
