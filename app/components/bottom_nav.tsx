@@ -10,6 +10,7 @@ import {
   RiToolsFill,
   RiToolsLine,
 } from "react-icons/ri";
+import { VscFeedback } from "react-icons/vsc";
 
 interface Props {
   activeTab: string;
@@ -70,6 +71,20 @@ const BottomNav: React.FC<Props> = ({ activeTab, setActiveTab }) => {
           <RiMailAddLine size={24} />
         )}
         Contact
+      </button>
+      <button
+        onClick={() => setActiveTab("testimonials")}
+        className={`flex flex-col gap-1 items-center justify-center hover:opacity-60 text-xs text-[${
+          activeTab == "contact" ? "var(--primary-color)" : ""
+        }] `}
+      >
+        {/* {activeTab == "contact" ? (
+          <RiMailAddFill size={24} />
+        ) : (
+          <RiMailAddLine size={24} />
+        )} */}
+        <VscFeedback size={24} />
+        <span className="text-gray-400">Testimonials</span>
       </button>
       <button
         onClick={() => setActiveTab("about")}
