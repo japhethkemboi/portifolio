@@ -1,0 +1,125 @@
+[
+  {
+    "title": "Sports Arbitrage",
+    "desc": "A sports arbitrage web app that scraps odds, looks for arbitrage opportunities and notifys you.",
+    "theme": {
+      "primary": "#173C51",
+      "secondary": "#C19A38",
+      "text": "#173C51",
+      "bg": "#DCE1E9"
+    },
+    "images": ["/images/rr28/1.png"],
+    "tags": [
+      "Javascript",
+      "Python",
+      "MySQL",
+      "Reactjs",
+      "Django",
+      "Tailwindcss",
+      "AWS",
+      "Cronjobs",
+      "Scrapping",
+      "Latvian",
+      "Upwork"
+    ]
+  },
+  {
+    "title": "Questionnaire app",
+    "desc": "Questionnaire app designed to estimate users' video game addiction levels through comprehensive assessments.",
+    "theme": {
+      "primary": "#40D3B6",
+      "secondary": "#5B9927",
+      "text": "#221E38",
+      "bg": "#E5EEE9"
+    },
+    "images": [
+      "/images/questionnaire/1.jpg",
+      "/images/questionnaire/2.jpg",
+      "/images/questionnaire/3.jpg",
+      "/images/questionnaire/4.jpg",
+      "/images/questionnaire/5.jpg"
+    ],
+    "tags": ["Javascript", "React Native", "Firebase", "Tailwindcss", "Upwork"]
+  },
+  {
+    "title": "The Northern Market",
+    "desc": "Freelancing web app (prototype) connecting clients and freelancers while ensuring protection for both parties.",
+    "theme": {
+      "primary": "#292D38",
+      "secondary": "#848C84",
+      "text": "#848484",
+      "bg": "#F4F4F4"
+    },
+    "images": [
+      "/images/ewriters/1.jpg",
+      "/images/ewriters/2.jpg",
+      "/images/ewriters/3.jpg"
+    ],
+    "tags": [
+      "HTML",
+      "Javascript",
+      "CSS",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "Upwork",
+      "Canadian"
+    ]
+  },
+  {
+    "title": "BurghExpress",
+    "desc": "A canadian food delivery application that links resturants to food lovers.",
+    "theme": {
+      "primary": "#F30A0B",
+      "secondary": "#E87474",
+      "text": "#000",
+      "bg": "#E2EAF3"
+    },
+    "images": [
+      "/images/burghexpress/logo.png",
+      "/images/burghexpress/1.png",
+      "/images/burghexpress/2.png",
+      "/images/burghexpress/3.png",
+      "/images/burghexpress/4.png",
+      "/images/burghexpress/5.png",
+      "/images/burghexpress/6.png",
+      "/images/burghexpress/7.png",
+      "/images/burghexpress/8.png"
+    ],
+    "tags": [
+      "Javascript",
+      "Python",
+      "React Native",
+      "Django",
+      "MySQL",
+      "Upwork"
+    ]
+  },
+  {
+    "title": "Dandia",
+    "desc": "A Kenyan cross-platform app facilitating easy bookings for cars, buses, and shuttles, streamlining transportation options for users.",
+    "theme": {
+      "primary": "#252221",
+      "secondary": "#878671",
+      "text": "#7E7068",
+      "bg": "#F0EFEF"
+    },
+    "images": [
+      "/images/dandia/1.jpg",
+      "/images/dandia/2.jpg",
+      "/images/dandia/3.jpg",
+      "/images/dandia/4.jpg",
+      "/images/dandia/5.jpg",
+      "/images/dandia/6.jpg"
+    ],
+    "tags": [
+      "Javascript",
+      "Python",
+      "React Native",
+      "Django",
+      "MySQL",
+      "Tailwindcss",
+      "API"
+    ]
+  }
+]

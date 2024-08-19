@@ -22,22 +22,11 @@ interface Props {
 
 const ProjectTile: React.FC<Props> = ({ props, setModalImage }) => {
   return (
-    <div
-      className="flex rounded-lg flex-col w-full p-2 text-xs lg:text-sm gap-4"
-      style={{ backgroundColor: props.theme.bg }}
-    >
-      <h1
-        style={{ color: props.theme.primary }}
-        className="font-bold text-lg lg:text-xl md:block hidded"
-      >
+    <div className="flex rounded-lg flex-col w-full p-2 text-xs lg:text-sm gap-4 border bg-[#1fc7519d]">
+      <h1 className="font-bold text-lg lg:text-xl md:block hidded">
         {props.title}
       </h1>
-      <p
-        style={{ color: props.theme.text }}
-        className="text-gray-600 text-ellipsis line-clamp-3"
-      >
-        {props.desc}
-      </p>
+      <p className="text-gray-600 text-ellipsis line-clamp-3">{props.desc}</p>
       <div className="flex gap-2 overflow-hidden">
         {props.images.map((image, index) => (
           <button
@@ -59,8 +48,7 @@ const ProjectTile: React.FC<Props> = ({ props, setModalImage }) => {
           <a
             href={tag}
             key={index}
-            style={{ color: props.theme.secondary }}
-            className="p-1 text-xs whitespace-nowrap hover:underline"
+            className="p-1 text-gray-400 text-xs whitespace-nowrap hover:underline"
           >
             #{tag}
           </a>

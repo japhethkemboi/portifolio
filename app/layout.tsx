@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth no-scrollbar">
+    <html lang="en" className="!scroll-smooth no-scrollbar h-screen flex">
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
