@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
-import { FaGithub, FaUpwork, FaXTwitter } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import { FaGithub, FaUpwork } from "react-icons/fa6";
 
 function Contact() {
   const [error, setError] = useState<string>("");
@@ -53,7 +52,7 @@ function Contact() {
   return (
     <section id="contact" className="flex flex-col gap-4 p-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-extrabold">Contact me</h2>
+        <h2 className="text-3xl font-extrabold">Contact me</h2>
         <div className="flex gap-2">
           <a
             target="_blank"
@@ -78,18 +77,6 @@ function Contact() {
           </a>
         </div>
       </div>
-      <p className="text-sm md:text-base lg:text-lg mb-4 text-black/80">
-        If you are looking for a dedicated developer to bring your ideas to
-        life, let&apos;s connect! I am always open to discussing new projects
-        and opportunities.
-      </p>
-      <a
-        target="_blank"
-        href="mailto:japhethkemboi69@gmail.com"
-        className="text-black/60 hover:underline hover:text-blue-500 text-xs"
-      >
-        Fill the form or email me japhethkemboi69@gmail.com
-      </a>
       <form
         onSubmit={(e) => onSubmit(e)}
         className="border bg-gray-50 rounded-lg flex shrink-0 flex-col gap-6 w-full p-4 max-w-lg text-sm"

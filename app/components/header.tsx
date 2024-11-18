@@ -5,9 +5,11 @@ import { ToggleTheme } from "./theme";
 import { RiCloseFill, RiMenu5Fill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { TfiClose } from "react-icons/tfi";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     isNavOpen
@@ -17,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed dark:text-gray-800 flex w-full z-10 justify-between whitespace-nowrap sm:p-4 p-2 text-[var(--link-color)] text-xs sm:text-sm md:text-base lg:text-lg backdrop-blur bg-white/80 border-b">
+      <header className="sticky top-0 flex w-full z-10 justify-between whitespace-nowrap p-4 text-[var(--link-color)] text-xs sm:text-sm md:text-base lg:text-lg backdrop-blur bg-white/80 border-b">
         <button
           onClick={() => setIsNavOpen(!isNavOpen)}
           className="p-2 text-lg sm:hidden"
@@ -25,31 +27,39 @@ const Header = () => {
           {isNavOpen ? <RiCloseFill /> : <RiMenu5Fill />}
         </button>
 
-        <div className="hidden sm:flex gap-2 md:gap-4 text-[var(--link-color)] dark:text-gray-800 items-center">
-          <a
-            href="/"
-            className="border-b-4 border-[var(--link-hover-color)] p-1 px-3 text-[var(--primary-color)] font-bold"
+        <div className="hidden sm:flex gap-4 text-[var(--link-color)] dark:text-gray-800 items-center">
+          <Link
+            to="/"
+            className={`${
+              location.pathname === "/"
+                ? "bg-[#012C37] text-white font-bold"
+                : "text-[var(--link-color)]"
+            } p-3`}
           >
             Home
-          </a>
-          <a
-            href="#projects"
-            className="hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]"
+          </Link>
+          <Link
+            to="/projects"
+            className={`${
+              location.pathname === "/projects"
+                ? "bg-[#012C37] text-white font-bold"
+                : "text-[var(--link-color)]"
+            } p-3`}
           >
             Projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]"
           >
             Contact
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/resume"
             className="hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]"
           >
             Resume
-          </a>
+          </Link>
         </div>
         <div className="flex gap-2 items-center">
           <ToggleTheme />
@@ -66,12 +76,6 @@ const Header = () => {
               <CgClose />
             </button>
           </div>
-          <a
-            href="mailto:japhethkemboi69@gmail.com"
-            className="p-2 px-3 text-white bg-[var(--primary-color)] rounded-full hover:opacity-70"
-          >
-            Hire Me
-          </a>
         </div>
       </header>
       {isNavOpen && (
@@ -84,30 +88,30 @@ const Header = () => {
               <TfiClose />
               Close
             </button>
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="bg-[var(--link-hover-color)] text-white rounded p-2 px-3"
             >
               Home
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              to="/projects"
               className="hover:bg-[var(--primary-color)] rounded hover:text-white dark:hover:text-white/80 p-2 px-3"
             >
               Projects
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="hover:bg-[var(--primary-color)] rounded hover:text-white dark:hover:text-white/80 p-2 px-3"
             >
               Contact
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/resume"
               className="hover:bg-[var(--primary-color)] rounded hover:text-white dark:hover:text-white/80 p-2 px-3"
             >
               Download resume
-            </a>
+            </Link>
           </div>
           <div
             className="absolute w-1/4 right-0 top-0 bottom-0"

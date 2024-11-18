@@ -48,20 +48,11 @@ function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="flex flex-col lg:flex-row gap-2 p-8 items-center justify-evenly border-t"
-    >
-      <div className="flex flex-col text-center gap-4 max-w-lg">
-        <h2 className="self-center text-black dark:text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
-          Get in touch with me
-        </h2>
-        <h3 className="text-sm md:text-base lg:text-lg mb-4">
-          If you are looking for a dedicated developer to bring your ideas to
-          life, let&apos;s connect! I am always open to discussing new projects
-          and opportunities.
-        </h3>
-      </div>
+    <section id="contact" className="flex flex-col gap-4 items-center">
+      <h2 className="font-semibold text-4xl">Get in touch with me</h2>
+      <p className="text-sm md:text-base lg:text-lg mb-4">
+        Let&apos;s redefine what&apos;s possible.
+      </p>
       <form
         onSubmit={(e) => onSubmit(e)}
         className="flex shrink-0 flex-col gap-6 w-full p-8 max-w-lg border bg-white/60 dark:bg-gray-800 rounded-lg text-sm"
