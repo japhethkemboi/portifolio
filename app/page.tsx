@@ -2,8 +2,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/hero";
 import Header from "./components/header";
-import Projects from "./pages/projects/projects";
-import Footer from "./components/footer";
 import { useTheme } from "next-themes";
 import Testimonials from "./components/testimonials";
 import About from "./pages/about";
@@ -25,7 +23,7 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/search" element={<Search />} />

@@ -34,30 +34,31 @@ const Header = () => {
               location.pathname === "/"
                 ? "bg-[#012C37] text-white font-bold"
                 : "text-[var(--link-color)]"
-            } p-3`}
+            } p-3 hover:bg-[#012C37] hover:text-white`}
           >
             Home
           </Link>
           <Link
-            to="/projects"
+            to="/about"
             className={`${
-              location.pathname === "/projects"
+              location.pathname === "/about"
                 ? "bg-[#012C37] text-white font-bold"
                 : "text-[var(--link-color)]"
-            } p-3`}
+            } p-3 hover:bg-[#012C37] hover:text-white`}
           >
-            Projects
+            About
           </Link>
           <Link
             to="/contact"
-            className="hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]"
+            className={`${
+              location.pathname === "/contact"
+                ? "bg-[#012C37] text-white font-bold"
+                : "text-[var(--link-color)]"
+            } p-3 hover:bg-[#012C37] hover:text-white`}
           >
             Contact
           </Link>
-          <Link
-            to="/resume"
-            className="hover:text-[var(--link-hover-color)] dark:hover:text-[var(--link-hover-color)]"
-          >
+          <Link to="/resume" className="hover:text-[#012C37] hover:scale-95">
             Resume
           </Link>
         </div>
